@@ -1,5 +1,15 @@
 {
   "name": "DevOneBitCode",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "5.0.1",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1",
+    "vue-resource": "^1.5.1",
+    "vue-template-compiler": "^2.6.11",
+    "vue-turbolinks": "^2.1.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }
