@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
+ 
+development:
+  <<: *default
+  database: portfolio_onebitcode_development
+ 
+test:
+  <<: *default
+  database: portfolio_onebitcode_test
