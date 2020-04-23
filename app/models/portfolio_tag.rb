@@ -3,6 +3,7 @@ class PortfolioTag < ApplicationRecord
   belongs_to :tag
  
   validate :max_tags_for_portfolio
+  
   validates :tag_id, uniqueness: { scope: :portfolio_id }
  
  
