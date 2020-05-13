@@ -9,7 +9,7 @@ gem "mini_magick"
 gem 'devise'
 
 # Set Authorization
-gem 'pundit'
+gem 'pundit', "2.0"
 
 gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
