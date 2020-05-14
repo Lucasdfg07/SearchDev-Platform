@@ -14,7 +14,7 @@ class KindSideValidator < ActiveModel::Validator
  
  
   def right_kind?
-    ["education", "experience", "hobby", "skill", "language", "additional_information"].include? @record.kind
+    ["education", "experience", "hobby", "skill", "language", "additional_information", "contact_form"].include? @record.kind
   end
  
  
