@@ -1,0 +1,12 @@
+.widgets {
+  margin-top: 50px;
+  .blocks{ }
+}
+ 
+@media #{$medium-and-up} {
+  .widgets {
+    .widget_right {
+      margin-left: 30px !important;
+    }
+  }
+ }
