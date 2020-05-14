@@ -68,7 +68,7 @@
   import Language from '../portfolio_resources/language'
   import Skill from '../portfolio_resources/skill'
   import Social from '../portfolio_resources/social'
-  import ContactForm from '../portfolio_resources/contact_form'  
+  import ContactForm from '../portfolio_resources/contact_form_block'  
  
   export default {
       components: {
