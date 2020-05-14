@@ -7505,6 +7505,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
+vue-ckeditor2@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/vue-ckeditor2/-/vue-ckeditor2-2.1.5.tgz#1d28e6963612f164afac14568fa50fcee38e9bd9"
+  integrity sha512-8aDxfu4Yhfba8b/TPWLEq2qXEasyBvIx5+QPlg1yHe+U3qfKwKBeplQFtQmZN6W8EtDeKEz+AAHn+ALgJMDRsQ==
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
