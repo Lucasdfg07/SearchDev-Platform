@@ -1,6 +1,95 @@
 .widgets {
   margin-top: 50px;
-  .blocks{ }
+  .blocks {
+    .block {
+      .title{
+        font-size: 18px;
+        font-weight: 700;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .profile{
+        padding-bottom: 0;
+        .name{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+     
+        .title{
+            font-size: 18px;
+            font-weight: 700;
+        }
+      }
+
+      .history{
+         padding-top: 10px;
+         margin-bottom: 0;
+     
+         .time_box{
+             .date{
+                 font-weight: 700;
+                 font-size: 16px;
+                 padding: 5px;
+             }
+         }
+         .company{
+             font-size: 18px;
+             font-weight: 700;
+         }
+         .professional_title{
+             font-size: 20px;
+             font-weight: 700;
+         }
+         .professional_description{
+             font-size: 18px;
+             font-weight: 700;
+         }
+         .custom-space{
+             margin-bottom: 6px;
+         }
+         .zero-bottom-space{
+             margin-bottom: 0px;
+         }
+      }
+
+      .percent{
+        padding-top: 10px;
+        margin-bottom: 0;
+     
+        .box{
+            padding: 5px;
+            .title{
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+        .custom-space{
+            margin-bottom: 10px;
+        }
+        .zero-bottom-space{
+            margin-bottom: 0px;
+        }
+        .stars{
+            margin-top: 4px;
+            i{
+                font-size: 26px;
+            }
+        }
+      }
+
+      .icon_list{
+        .item{
+            margin-bottom: 0;
+        }
+        .name{
+            font-weight: 700;
+            font-size: 18px;
+        }
+      }
+    }
+  }
 }
  
 @media #{$medium-and-up} {
