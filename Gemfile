@@ -11,6 +11,9 @@ gem 'devise'
 # Set Authorization
 gem 'pundit', "2.0"
 
+# Search
+gem 'kaminari'
+
 gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
