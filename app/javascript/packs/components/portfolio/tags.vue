@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="input-field col s12">
-      <input type="text" id="autocomplete-tags" class="autocomplete" @keydown.enter="addTag">
+      <input type="text" id="autocomplete-tags" class="autocomplete" @keydown.enter="addTag" @change="addTag">
       <label for="autocomplete-tags">Procure uma Tag</label>
     </div>
     <div class="col s12">

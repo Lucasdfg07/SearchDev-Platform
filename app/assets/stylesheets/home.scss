@@ -1,5 +1,6 @@
 .home-title {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 0px;
  
   p {
     color: #424242;
@@ -7,16 +8,23 @@
   }
 }
  
+.login-content {
+  margin-top: 50px !important;
+}
+ 
 .home-content {
-  margin-top: 30px;
+  margin-top: 0px !important;
  
   .card{
-    height: 435px;
+    height: 405px;
+    .card-content{
+      padding: 14px;
+    }
   }
  
   .card-title {
     color: #9e9e9e;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 0;
     align-content: center;
