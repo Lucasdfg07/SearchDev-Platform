@@ -1,5 +1,5 @@
 
-![Logo of the project](https://github.com/Lucasdfg07/SearchDev-Platform/blob/master/public/readme_images/logo.png)
+![Logo of the project](https://youtu.be/V8OrqDDFLvE)
 
 
 ## Search Dev
