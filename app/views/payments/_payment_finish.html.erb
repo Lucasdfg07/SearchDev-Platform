@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col offset-m1 m10 s12">
+    <p class="custom-grey-text">Ao clicar em "Comprar Premium" você estará aceitando os <a href="/terms">Termos de Uso</a>.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col offset-m4 m4 s12 center">
+    <%= form.hidden_field :portfolio_id, value: @portfolio.id %>
+    <%= form.submit 'Comprar Premium', :class => 'btn btn-large custom-orange' %>
+  </div>
+  <div class="col offset-m2 m2 s12 center">
+    <%= image_tag "/moip.png", class: 'payment_image' %>
+  </div>
+</div>

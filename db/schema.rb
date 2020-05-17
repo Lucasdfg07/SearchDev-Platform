@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_14_004338) do
+ActiveRecord::Schema.define(version: 2020_05_17_042938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -119,6 +119,16 @@ ActiveRecord::Schema.define(version: 2020_05_14_004338) do
     t.index ["portfolio_id"], name: "index_languages_on_portfolio_id"
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.integer "status"
+    t.bigint "portfolio_id"
+    t.string "moip_id"
+    t.date "due_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["portfolio_id"], name: "index_orders_on_portfolio_id"
+  end
+
   create_table "portfolio_tags", force: :cascade do |t|
     t.bigint "portfolio_id"
     t.bigint "tag_id"
@@ -196,6 +206,7 @@ ActiveRecord::Schema.define(version: 2020_05_14_004338) do
   add_foreign_key "experiences", "portfolios"
   add_foreign_key "hobbies", "portfolios"
   add_foreign_key "languages", "portfolios"
+  add_foreign_key "orders", "portfolios"
   add_foreign_key "portfolio_tags", "portfolios"
   add_foreign_key "portfolio_tags", "tags"
   add_foreign_key "portfolios", "users"
