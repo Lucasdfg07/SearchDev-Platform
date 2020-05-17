@@ -14,8 +14,6 @@ gem 'pundit', "2.0"
 # Search
 gem 'kaminari'
 
-gem 'mini_magick'
-
 # Moip
 gem 'moip2'
 
