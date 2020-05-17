@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col m4 offset-m1 s12 ">
+    <div class="input-field">
+      <%= form.text_field :fullname, required: true %>
+      <label for="fullname">Nome Completo</label>
+    </div>
+    <div class="input-field">
+      <%= form.email_field :email, required: true %>
+      <label for="email">Email</label>
+    </div>
+    <div class="row phone_number">
+      <div class="col s3">
+        <div class="input-field">
+          <%= form.number_field "phone[area_code]", required: true %>
+          <label for="phone_area_code">DDD</label>
+        </div>
+      </div>
+        <div class="col s9">
+        <div class="input-field">
+          <%= form.number_field "phone[number]", required: true %>
+          <label for="phone_number">Telefone</label>
+        </div>
+      </div>
+    </div>
+    <div class="input-field">
+      <%= form.text_field "address[street]", required: true %>
+      <label for="street">Endereço</label>
+    </div>
+    <div class="input-field">
+      <%= form.text_field "address[city]", required: true %>
+      <label for="city">Cidade</label>
+    </div>
+    <div class="input-field">
+      <%= render_states('address[state]') %>
+      <label for="state">Estado</label>
+    </div>
+  </div>
+  <div class="col m4 offset-m2 s12">
+    <div class="input-field">
+      <%= form.text_field :cpf, required: true %>
+      <label for="cpf">CPF</label>
+    </div>
+    <div class="row birthdate">
+      <div class="col s3">
+        <div class="input-field">
+          <%= form.select(:birthdate_day, 
+              options_for_select( 
+                (1..31).to_a)) %>
+          <label for="birthdate_day">Dia</label>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="input-field">
+          <%= form.select(:birthdate_month, options_for_select( (1..12).to_a)) %>
+          <label for="birthdate_month">Mês</label>
+        </div>
+      </div>
+        <div class="col s6">
+        <div class="input-field">
+          <%= form.select(:birthdate_year, options_for_select( birthdate_year_range )) %>
+          <label for="birthdate_year">Ano</label>
+        </div>
+      </div>
+    </div>
+    <div class="input-field">
+      <%= form.number_field "address[zipcode]", required: true %>
+      <label for="zipcode">CEP</label>
+    </div>
+    <div class="input-field">
+      <%= form.number_field "address[number]", required: true %>
+      <label for="number">Numero</label>
+    </div>
+    <div class="input-field">
+      <%= form.text_field "address[district]", required: true %>
+      <label for="district">Bairro</label>
+    </div>
+    <div class="input-field">
+      <%= form.hidden_field "address[country]", value: 'BRA' %>
+    </div>
+  </div>
+</div>

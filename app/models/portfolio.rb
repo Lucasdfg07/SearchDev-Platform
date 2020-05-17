@@ -8,6 +8,7 @@ class Portfolio < ApplicationRecord
  
   has_one :profile, :dependent => :destroy
   has_one :about, :dependent => :destroy
+  has_one :order
  
   has_many :blocks, :dependent => :destroy
   has_many :portfolio_tags, :dependent => :destroy

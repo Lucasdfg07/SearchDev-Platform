@@ -1,0 +1,30 @@
+<%= form_with(url: "/portfolios/#{@portfolio.id}/payments", method: 'post', local: true, id: 'payment_form') do |form| %>
+  <div class="payments_form">
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header title">
+          <i class="material-icons custom-grey-text icon">person</i>Passo 1 - Seus dados
+        </div>
+        <div class="collapsible-body">
+          <%= render partial: 'payment_info_form', locals: {form: form} %>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header title">
+          <i class="material-icons custom-grey-text subtitle">credit_card</i>Passo 2 - Dados do cartão
+        </div>
+        <div class="collapsible-body">
+          <%= render partial: 'payment_credit_card_form', locals: {form: form} %>
+        </div>
+      </li>
+        <li>
+          <div class="collapsible-header title">
+            <i class="material-icons custom-grey-text subtitle">check_circle</i>Passo 3 - Finalizar
+          </div>
+          <div class="collapsible-body">
+            <%= render partial: 'payment_finish_form', locals: {form: form} %>
+          </div>
+        </li>
+    </ul>
+  </div>
+<% end %>s

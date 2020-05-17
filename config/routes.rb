@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  get 'search/index'
+  get 'webhooks/webhook'
   root 'pages#home'
-  devise_for :users
   get :search, to: "search#index"
- 
+  devise_for :users
   resources :contact_forms, only: [:create]
  
   resources :portfolios, except: :new do
+    member do
+      resources :payments, only: [:index, :create]
+    end
     resources :tags, only: [:create, :destroy], param: :tag_id, controller: :portfolio_tags
     resources :blocks, only: [:index, :create, :destroy] do
       resources :additional_informations, only: [:index, :update]
@@ -25,4 +27,6 @@ Rails.application.routes.draw do
  
   resources :tags, only: :index
   get '/:slug', to: 'portfolios#show'
+
+  post '/webhooks', to: 'webhooks#webhooks'
 end

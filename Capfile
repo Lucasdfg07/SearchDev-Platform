@@ -5,6 +5,7 @@ require 'capistrano/rails'
 require 'capistrano/rvm'
 require 'capistrano/puma'
 require 'capistrano/yarn'
+require "whenever/capistrano"
  
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma

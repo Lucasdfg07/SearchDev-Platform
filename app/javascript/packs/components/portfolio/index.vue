@@ -1,22 +1,27 @@
 <template>
   <div class="row">
     <div class="col m10 offset-m1 s12">
-      <h5 class="custom-grey-text page-title">Configure seu Portfolio</h5>
+      <h5 class="custom-grey-text page-title">
+        Configure seu Portfolio
+          <a :href="`/portfolios/${portfolio.id}/payments`" class="right chip custom-orange white-text">
+            <b class="white-text">Promova seu Portfólio</b>
+          </a>
+      </h5>
       <div class="card-panel">
         <form>
           <div class="row">
             <div class="input-field col l4 m6 s12">
               <input name="portfolio[slug]" v-model="portfolio.slug" @change="update()" />
               <input name="portfiolio[public_url]" :value="public_url" type="hidden" />
-              <label class="active font_20 custom-grey-text text-darken-1">Slug <i class="fa fa-info-circle"></i></label>
+              <label class="active font_20 custom-grey-text text-darken-1">Slug <i class="fa fa-info-circle tooltipped" data-tooltip="Nome que vai aparecer na URL"></i></label>
             </div>
             <div class="col l2 m2 s12 slug-actions hide-on-small-and-down">
-              <i class="far fa-copy element" @click="copyToClipboard()"></i>
+              <i class="far fa-copy element tooltipped" data-tooltip="Copiar para o Clipboard" @click="copyToClipboard()"></i>
               <a :href="`/${ portfolio.slug }`" data-tooltip="Visualizar" class="fa fa-external-link-square-alt element tooltipped"></a>
             </div>
  
             <div class="col offset-l2 l2 m2 s6 center">
-              <label class="font_16 custom-grey-text text-darken-1">Ativo <i class="fa fa-info-circle"></i></label>
+              <label class="font_16 custom-grey-text text-darken-1">Ativo <i class="fa fa-info-circle tooltipped" data-position="bottom" data-tooltip="Pode ser encontrado pela URL"></i></label>
               <div class="switch">
                 <label>
                   <input name="portfolio[active]" v-model="portfolio.active" type="checkbox" @change="update()" />
@@ -26,7 +31,7 @@
             </div>
  
             <div class="col l2 m2 s6 center">
-              <label class="font_16 custom-grey-text text-darken-1">Listado <i class="fa fa-info-circle"></i></label>
+              <label class="font_16 custom-grey-text text-darken-1">Listado <i class="fa fa-info-circle tooltipped" data-tooltip="Aparece nas pesquisas por candidatos"></i></label>
               <div class="switch">
                 <label>
                   <input name="portfolio[listed]" v-model="portfolio.listed" type="checkbox" @change="update()" />
@@ -40,7 +45,7 @@
             <div class="col l4 m8 s8">
               <Tags :portfolio-id="portfolio.id" :portfolio-tags="portfolio.tags" />
             </div>
-            <div class="input-field col l2 offset-m1 m4 offset-s4 s4">
+            <div class="input-field col l2 offset-m1 m4 s6">
               <label>
                 <input name="portfolio[remote_ok]" v-model="portfolio.remote_ok" type="checkbox" class="filled-in" @change="update()" />
                 <span>Remote OK</span>

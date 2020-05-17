@@ -1,0 +1,35 @@
+<div class="row payments">
+  <div class="col s12 m8 offset-m2">
+    <div class="card-panel">
+      <div class="row">
+        <div class="col s12">
+          <p class="title custom-orange-text">Programador(a) Premium</p>
+          <p class="subtitle custom-grey-text">Com apenas <b class="black-text">R$14.99</b> você se torna premium por um mês e <b class="black-text">aparece primeiro nas buscas de desenvolvedor</b> (para suas palavras chave) e aumenta suas chances de ser contatado(a) por uma grande empresa.</p>
+        </div>
+      </div>
+      <div class="row center">
+        <% if @order.present? && @order.status == 'waiting' %>
+          <div class="col s12 center">
+            <div class="chip custom-green">
+              <b class="white-text">Seu pedido está aguardando o pagamento</b>
+            </div>
+          </div>
+        <% elsif @order.present? && @order.status == 'active' %>
+          <div class="col s12 center">
+            <div class="chip custom-orange">
+              <b class="white-text">Seu Premium está ativo \o/</b>
+            </div>
+          </div>
+        <% else %>
+          <div class="col s12 be_premium">
+            <button class="btn btn-large custom-orange" id="be_premium_btn">
+              <i class="material-icons right">star</i>Quero ser Premium
+            </button>
+            <p class="custom-grey-text">*Você pode cancelar a qualquer momento</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <%= render 'payment' %>
+  </div>
+</div>
