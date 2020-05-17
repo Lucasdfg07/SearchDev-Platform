@@ -1,4 +1,4 @@
-<div class="portfolio col s12 m3 l3">
+<div class="portfolio col s12 m4 l4">
   <div class="card-panel center">
     <div class="col s12 m12 l12">
       <a href="" class="remove-portfolio right custom-grey-text text-darken-2">
@@ -16,7 +16,7 @@
         <%= link_to "Editar", edit_portfolio_path(portfolio), class: "btn light-blue lighten-2 col m12 s12" %>
       </div>
       <div class="col s6 m6 l6">
-        <%= link_to "Visualizar", portfolio, class: "btn orange darken-1 right col m12 s12" %>
+        <%= link_to "Visualizar", "/#{portfolio.slug}", class: "btn orange darken-1 right col m12 s12" %>
       </div>
     </div>
   </div>

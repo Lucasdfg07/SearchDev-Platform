@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 @import "materialize-css/sass/materialize";
-@import '@fortawesome/fontawesome-free/css/all.css';
 @import 'support/*';
 @import 'resources/*';
 @import "shared/_navbar";
@@ -9,4 +8,5 @@
 @import 'home';
 @import "portfolios";
 @import "widgets";
-@import "search";
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import '404';

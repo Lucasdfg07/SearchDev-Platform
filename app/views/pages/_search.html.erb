@@ -2,29 +2,29 @@
   <div class='card-content'>
     <div class='row'>
       <div class="col m10 offset-m1 s10 offset-s1">
-        <%= form_with(url: '/search', local: true) do |f| %>
+        <%= form_with url: search_path, method: :get, local: true do |f| %>
           <div class="input-field">
             <%= f.label :skills, "Habilidades" %><br />
-            <%= f.text_field :skills, class: 'field' %> 
+            <%= f.text_field :tag %>
           </div>
  
           <div class="input-field">
             <%= f.label :locale, "Onde" %><br />
-            <%= f.text_field :locale, class: 'field' %>
+            <%= f.text_field :place %>
           </div>
  
           <div class="input-field ">
             <label>
-              <%= f.check_box :remote_ok, class: 'filled-in'  %>
+              <%= f.check_box :remote_ok, class: "filled-in", value: false %>
               <span>Remote OK</span><br />
             </label>
             <br />
           </div>
  
           <div class="submit-button-search row">
-            <button class='btn btn-large custom-grey darken-1 form-button col m12 s12'>
-              <i class='material-icons right'>search</i>Buscar Dev
-            </button>
+            <%= f.button class: "btn btn-large custom-grey darken-1 form-button col m12 s12" do %>
+              <i class='material-icons right'>search</i>Buscar
+            <% end %>
           </div>
         <% end %>
       </div>
