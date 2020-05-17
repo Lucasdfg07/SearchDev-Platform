@@ -1,0 +1,54 @@
+{
+  "app.js": "/packs-test/js/app-95c407ad576d8842934c.js",
+  "app.js.map": "/packs-test/js/app-95c407ad576d8842934c.js.map",
+  "application.js": "/packs-test/js/application-f17796a7858e24582792.js",
+  "application.js.map": "/packs-test/js/application-f17796a7858e24582792.js.map",
+  "components/portfolio/index.js": "/packs-test/js/components/portfolio/index-39f66cdbfac7bff1aa37.js",
+  "components/portfolio/index.js.map": "/packs-test/js/components/portfolio/index-39f66cdbfac7bff1aa37.js.map",
+  "components/portfolio/tags.js": "/packs-test/js/components/portfolio/tags-0604918733df4b1b4f32.js",
+  "components/portfolio/tags.js.map": "/packs-test/js/components/portfolio/tags-0604918733df4b1b4f32.js.map",
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/packs-test/js/app-95c407ad576d8842934c.js"
+      ],
+      "js.map": [
+        "/packs-test/js/app-95c407ad576d8842934c.js.map"
+      ]
+    },
+    "application": {
+      "js": [
+        "/packs-test/js/application-f17796a7858e24582792.js"
+      ],
+      "js.map": [
+        "/packs-test/js/application-f17796a7858e24582792.js.map"
+      ]
+    },
+    "components/portfolio/index": {
+      "js": [
+        "/packs-test/js/components/portfolio/index-39f66cdbfac7bff1aa37.js"
+      ],
+      "js.map": [
+        "/packs-test/js/components/portfolio/index-39f66cdbfac7bff1aa37.js.map"
+      ]
+    },
+    "components/portfolio/tags": {
+      "js": [
+        "/packs-test/js/components/portfolio/tags-0604918733df4b1b4f32.js"
+      ],
+      "js.map": [
+        "/packs-test/js/components/portfolio/tags-0604918733df4b1b4f32.js.map"
+      ]
+    },
+    "hello_vue": {
+      "js": [
+        "/packs-test/js/hello_vue-b094f640008c51d2bebd.js"
+      ],
+      "js.map": [
+        "/packs-test/js/hello_vue-b094f640008c51d2bebd.js.map"
+      ]
+    }
+  },
+  "hello_vue.js": "/packs-test/js/hello_vue-b094f640008c51d2bebd.js",
+  "hello_vue.js.map": "/packs-test/js/hello_vue-b094f640008c51d2bebd.js.map"
+}
