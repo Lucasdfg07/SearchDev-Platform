@@ -6,7 +6,7 @@
 Search Dev is an application to find the best devs to your company, and to devs find some jobs and be more viewed. Find the bests!
 
 ## Presentation
-[![Presentation](https://www.youtube.com/watch?v=V8OrqDDFLvE)]
+[<img src="https://img.youtube.com/vi/V8OrqDDFLvE/maxresdefault.jpg" width="50%">](https://youtu.be/V8OrqDDFLvE)
 
 
 ## Technology 
