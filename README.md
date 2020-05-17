@@ -1,12 +1,12 @@
 
-![Logo of the project](https://youtu.be/V8OrqDDFLvE)
+![Logo of the project](https://github.com/Lucasdfg07/SearchDev-Platform/blob/master/public/readme_images/logo.png)
 
 
 ## Search Dev
 Search Dev is an application to find the best devs to your company, and to devs find some jobs and be more viewed. Find the bests!
 
 ## Presentation
-![Presentation](https://github.com/Lucasdfg07/SearchDev-Platform/blob/master/public/readme_images/presentation.webm)
+[![Presentation](https://www.youtube.com/watch?v=V8OrqDDFLvE)]
 
 
 ## Technology 
