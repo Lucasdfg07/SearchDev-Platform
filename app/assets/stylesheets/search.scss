@@ -1,0 +1,111 @@
+.search-result {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 10px;
+ 
+  .profile-photo {
+    height: 89px;
+  }
+ 
+  .photo{
+    padding-top: 12px;
+    div{
+      margin-bottom: 5px;
+      img{
+        width: 90px;
+      }
+    }
+  }
+ 
+  .profile {
+    padding-top: 35px;
+ 
+    p {
+      margin: 0;
+ 
+      &.name {
+        font-size: 22px;
+        font-weight: 700;
+      }
+ 
+      &.title {
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+  }
+ 
+  .remote-ok {
+    div {
+      margin-top: 50px;
+      p {
+        display: inline-block;
+        padding: 2px 6px 2px 6px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+ 
+  .place {
+    padding-top: 20px;
+    div {
+      margin-top: 40px;
+    }
+  }
+ 
+  .trophy {
+    height: 130px;
+ 
+    div {
+      width: 100%;
+    }
+  }
+}
+ 
+ 
+.search-form{
+  .card-panel{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 2px;
+    padding-top: 20px;
+  }
+}
+ 
+.portfolio-item{  
+  .card-panel{
+    padding-left: 50px;
+    padding-right: 50px;
+    // padding-bottom: 0px;
+    // padding-top: 0px;
+    .title{
+      font-size: 22px;
+    }
+    img{
+      padding-top: 10px;
+    }
+  }
+}
+ 
+@media #{$medium-and-up} {
+  .search-form{
+    .card-panel{
+      .remote-ok{
+        padding-top: 15px;
+      }
+    }
+  }
+ }
+ 
+ @media #{$small-and-down} {
+  .search-form{
+    .card-panel{
+      padding-top: 30px;
+      .btn{
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+ }

@@ -1,0 +1,66 @@
+<div class='card z-depth-4 block'>
+  <div class='card-content contact'>
+    <%= render partial: "portfolios/shared/block_header", locals: {title: 'CONTATO'} %>
+    <div class='row'>
+      <div class="col m10 offset-m1">
+        <% if portfolio.contact.present? %>
+          <% if portfolio.contact.email %>
+            <div class="row item">
+              <div class="col m2">
+                <i class="material-icons custom-grey-text text-darken-1">email</i>
+              </div>
+   
+              <div class="col m10">
+                <p class="name custom-grey-text text-darken-1"><%= portfolio.contact.email %></p>
+              </div>
+            </div>
+          <% end %>
+          <% if portfolio.contact.website %>
+            <div class="row item">
+              <div class="col m2">
+                <i class="material-icons custom-grey-text text-darken-1">link</i>
+              </div>
+   
+              <div class="col m10">
+                <a href="<%= portfolio.contact.website %>" target="_blank" class="custom-grey-text text-darken-1">
+                  <p class="name">
+                    <%= portfolio.contact.website %>
+                  </p>
+                </a>
+              </div>
+            </div>
+          <% end %>
+          <% if portfolio.contact.phone %>
+            <div class="row item">
+              <div class="col m2">
+                <i class="material-icons custom-grey-text text-darken-1">phone</i>
+              </div>
+   
+              <div class="col m10">
+                <p class="name custom-grey-text text-darken-1">
+                  <%= portfolio.contact.phone %>
+                </p>
+              </div>
+            </div>
+          <% end %>
+          <% if portfolio.contact.address_country %>
+            <div class="row item">
+              <div class="col m2">
+                <i class="material-icons custom-grey-text text-darken-1">person_pin</i>
+              </div>
+   
+              <div class="col m10">
+                <p class="name custom-grey-text text-darken-1">
+                  <% if portfolio.contact.address_city %>
+                    <%= "#{portfolio.contact.address_city}, " %>
+                  <% end %>
+                  <%= portfolio.contact.address_country %>
+                </p>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

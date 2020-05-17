@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevOneBitCode</title>
+    <title>Portfolio Onebitcode</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%= favicon_link_tag "favicon.png" %>
+    <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script type="text/javascript" src="//assets.moip.com.br/v2/moip.min.js"></script>
   </head>
-
+ 
   <body>
-    <%= yield %>
+    <header>
+      <%= render "shared/navbar" %>
+    </header>
+ 
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+ 
+    <footer>
+      <%= render "shared/footer" %>
+    </footer>
   </body>
 </html>

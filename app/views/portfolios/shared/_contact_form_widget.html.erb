@@ -1,0 +1,32 @@
+<div class='card z-depth-4 block'>
+  <div class='card-content'>
+    <%= render partial: "portfolios/shared/block_header", locals: {title: 'ENVIE UMA MENSAGEM'} %>
+    <div class='row'>
+      <div class="col m10 offset-m1">
+        <%= form_with(url: '/contact_forms', id: 'contact_form') do |form| %>
+          <div class="input-field">
+            <%= form.email_field :email, required: true %>
+            <label for="email">Seu email</label>
+          </div>
+          <div class="input-field">
+            <%= form.text_field :title, required: true %>
+            <label for="title">Título do email</label>
+          </div>
+          <div class="input-field">
+            <%= form.text_area :description, class: 'materialize-textarea', required: true %>
+            <label for="description">Conteúdo do email</label>
+          </div>
+          <div class="input-field">
+            <%= form.hidden_field :portfolio_id, value: portfolio.id %>
+          </div>
+          <div class="input-field">
+            <%= form.hidden_field :user_id, value: portfolio.user.id %>
+          </div>
+          <div class="right">
+            <%= form.submit 'ENVIAR', :class => 'btn custom-orange' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

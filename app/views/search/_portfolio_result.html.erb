@@ -1,0 +1,44 @@
+<div class="row portfolio-item">
+  <div class="col l12 m12 s12">
+    <%= link_to "/#{portfolio.slug}" do %>
+      <div class="card-panel search-result hoverable">
+        <div class="row">
+          <div class="col l2 m6 s12 photo">
+            <div class="row">
+              <div class="col m10 offset-m1 s10 offset-s1 center">
+                <%= render_profile_photo(portfolio) %>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 m6 s12 profile">
+            <p class="name custom-grey-text"><%= render_profile_name(portfolio) %></p>
+            <p class="title custom-grey-text text-darken-1"><%= render_profile_title(portfolio) %></p>
+          </div>
+          
+          <div class="col l3 m6 s12 place center">
+            <% if portfolio.contact.present? %>
+              <div>
+                <i class="material-icons custom-blue-text small">place</i>
+                <b class="custom-grey-text"><%= portfolio.contact.address_city %> - <%= portfolio.contact.address_country %></b>
+              </div>
+            <% end %>
+          </div>
+ 
+          <div class="col l2 m6 s12 center remote-ok">
+            <div class="row">
+              <% if portfolio.remote_ok? %>
+                <p class="white-text custom-blue center">Remote OK</p>
+              <% end %>
+            </div>
+          </div>
+ 
+          <% if portfolio.featured? %>
+            <div class="col l1 m1 hide-on-med-and-down trophy custom-grey darken-1 valign-wrapper">
+              <div class="center"><i class="fa fa-icon fa-trophy fa-2x yellow-text"></i></div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

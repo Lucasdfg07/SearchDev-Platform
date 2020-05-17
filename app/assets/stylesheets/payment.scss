@@ -1,0 +1,49 @@
+.payments{
+  margin-top: 50px;
+ 
+  .card-panel{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+ 
+  .btn{
+    font-weight: 700;
+  }
+ 
+  .title{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .subtitle{
+    font-size: 18px;
+    font-weight: 600;
+  }
+ 
+  .payments_form{
+    margin-top: 40px;
+    display: none;
+    .title{
+      font-size: 18px;
+    }
+    .subtitle{
+      font-size: 32px;
+      font-weight: 500;
+    }
+    .phone_number{
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+    .birthdate{
+      margin-bottom: -8px;
+      margin-top: -15px;
+    }
+  }
+}
+ 
+@media #{$small-and-down} {
+  .payment_image{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+<div class='card z-depth-4 block'>
+  <div class='card-content'>
+    <%= render partial: "portfolios/shared/block_header", locals: {title: 'HOBBIES'} %>
+    <div class='row percent'>
+      <div class="col m10 offset-m1 s10 offset-s1">
+        <% portfolio.hobbies.each_with_index do |hobby, i| %>
+          <div class='row custom-space'>
+            <div class="col m4 s12 custom-blue">
+              <div class="left box">
+                <span class="title white-text">
+                  <%= hobby.title %>
+                </span>
+              </div>
+            </div>
+            <div class="col m8 s12 stars center">
+              <% (hobby.percent.to_i / 10).times do %>
+                <i class="material-icons grey-text text-ligten-3">star</i>
+              <% end %>
+              <% (10 - (hobby.percent.to_i / 10)).times do %>
+                <i class="material-icons custom-grey-text">star_border</i>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

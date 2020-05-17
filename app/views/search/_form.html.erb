@@ -1,0 +1,32 @@
+<div class="row search-form">
+  <div class="col l12 m12 s12">
+    <div class="card-panel">
+      <%= form_with url: search_path, method: :get, local: true do |f| %>
+        <div class="row">
+          <div class="input-field col s12 m6 l3">
+            <%= f.text_field :tag, placeholder: 'ruby, javascript, python...' %>
+            <%= f.label "Habilidades", class: "font_20" %>
+          </div>
+ 
+          <div class="input-field col s12 m6 l4">
+            <%= f.text_field :place, placeholder: 'São Paulo, Belo Horizonte, Recife...' %>
+            <%= f.label "Local", class: "font_20" %>
+          </div>
+ 
+          <div class="input-field col s12 m6 l3">
+            <label class="remote-ok">
+              <%= f.check_box :remote_ok, class: "filled-in", value: false %>
+              <span>Remote OK</span>
+            </label>
+          </div>
+ 
+          <div class="input-field col s12 m6 l2">
+            <%= f.button class: "btn right custom-green btn-large" do %>
+              Buscar <i class="fa fa-icon fa-search right"></i>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
